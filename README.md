@@ -10,12 +10,12 @@ git clone https://github.com/your-username/your-repo.git
 cd your-repo
 
 2️⃣ Create and Activate a Virtual Environment
-# Create a virtual environment
+// Create a virtual environment
 python -m venv venv
-# Activate the virtual environment
-# On Windows:
+// Activate the virtual environment
+// On Windows:
 venv\Scripts\activate
-# On macOS/Linux:
+// On macOS/Linux:
 source venv/bin/activate
 
 3️⃣ Install Dependencies
