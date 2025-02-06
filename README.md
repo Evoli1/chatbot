@@ -6,16 +6,25 @@ A simple chatbot built using Flask and OpenAI's API.
 Follow these steps to set up the project:
 
 1️⃣ Clone the Repository
+
 git clone https://github.com/your-username/your-repo.git
+
 cd your-repo
 
 2️⃣ Create and Activate a Virtual Environment
+
 // Create a virtual environment
+
 python -m venv venv
+
 // Activate the virtual environment
+
 // On Windows:
+
 venv\Scripts\activate
+
 // On macOS/Linux:
+
 source venv/bin/activate
 
 3️⃣ Install Dependencies
