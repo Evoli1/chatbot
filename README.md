@@ -23,9 +23,9 @@ pip install -r requirements.txt
 
 🔑 Add OpenAI API Key
 Before running the application, set your OpenAI API key as an environment variable.
-export OPENAI_API_KEY="your-api-key"  # For macOS/Linux
-set OPENAI_API_KEY="your-api-key"     # For Windows (CMD)
-$env:OPENAI_API_KEY="your-api-key"    # For Windows (PowerShell)
+export OPENAI_API_KEY="your-api-key"  // For macOS/Linux
+set OPENAI_API_KEY="your-api-key"     // For Windows (CMD)
+$env:OPENAI_API_KEY="your-api-key"    // For Windows (PowerShell)
 
 ▶️ Running the Application
 Once everything is set up, run the Flask app:
