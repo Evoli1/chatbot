@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-image" src="{{ url_for('static', filename='background.png')}}"></div>
+    <!-- Logo của Chatbot -->
+    <img id="chatbot-logo" src="{{ url_for('static', filename='logo.png') }}" alt="Chatbot Logo">
+
+    <div class="chat-container hidden" id="chat-container">
+        <div id="chat-header">
+            <img class="avatar" src="{{ url_for('static', filename='avatar.png') }}" alt="Chatbot Avatar">
+            <span class="chatbot-name">Libby</span>
+            <img id="close-button" src="{{ url_for('static', filename='close.png') }}" alt="Close Button">
+        </div>
+        <div id="chat-box"></div>
+        
+        <!-- Các nút lựa chọn -->
+        <div id="button-options" class="hidden">
+            <button class="chat-button" data-action="information-request">
+                <img src="{{ url_for('static', filename='information-request.png') }}" alt="Information Request">
+            </button>
+            <button class="chat-button" data-action="literatur-suchen">
+                <img src="{{ url_for('static', filename='literatur-suchen.png') }}" alt="Literatur Suchen">
+            </button>
+            <button class="chat-button" data-action="literatur-vorschlagen">
+                <img src="{{ url_for('static', filename='literatur-vorschlagen.png') }}" alt="Literatur Vorschlagen">
+            </button>
+        </div>
+    
+         <!-- Hộp nhập và nút gửi -->
+         <div class="input-container">
+            <input type="text" id="user-input">
+            <button id="send-button" class="send-button">
+                <img src="{{ url_for('static', filename='send-btn.png') }}" alt="Send Button">
+            </button>
+        </div>
+
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
